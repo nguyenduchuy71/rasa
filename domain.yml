@@ -1,0 +1,123 @@
+intents:
+# Ý đồ khách hàng
+ - greet
+ - thank
+ - bye
+ - tuvan
+ - tuvankhac
+ - hoc_cai_gi
+ - hocde
+ - yeucau_chung
+ - yeucau_toan
+ - yeucau_tienganh
+ - cohoivieclam
+ - luong
+ - ngon_ngu
+ - nganh_hot
+ - nu
+ - canh_tranh
+ - diemso
+ - hocbong
+ - kt_nentang
+ - giaovien
+ - chat_luong_giao_vien
+ - bai_tap_lon
+ - cuoc_thi
+ - cau_lac_bo
+ - insult: {triggers: utter_respond_insult}
+templates:
+# Bot trả lời
+ utter_greet:
+  - text: "Chào bạn :) .Bạn muốn mình tư vấn chuyền ngành gì"
+    buttons:
+      - title: "Khoa học máy tính"
+        payload: "khmt"
+      - title: "Kỹ thuật phần mềm"
+        payload: "ktpm"
+      - title: "Công nghệ thông tin"
+        payload: "cntt"
+      - title: "Hệ thống thông tin"
+        payload: "httt"
+ utter_tuvankhac:
+  - text: "Bạn hãy chọn cho mình 1 chuyên ngành khác đi mình sẽ tư vấn cho nha!"
+    buttons:
+      - title: "Khoa học máy tính"
+        payload: "khmt"
+      - title: "Kỹ thuật phần mềm"
+        payload: "ktpm"
+      - title: "Công nghệ thông tin"
+        payload: "cntt"
+      - title: "Hệ thống thông tin"
+        payload: "httt"
+ utter_thank:
+  - text: "Không có chi"
+ utter_bye:
+  - text: "Tạm biệt hẹn gặp lại"
+ utter_tuvan:
+  - text: "Đây là ngành học dành cho những bạn trẻ đam mê nghiên cứu chuyên sâu về CNTT, khả năng tính toán của hệ thống máy tính"
+ utter_hoc_cai_gi:
+  - text: "Trí tuệ nhân tạo \n Big Data!"
+ utter_hocde:
+  - text: "Tương đối khó phù hợp với các bạn giỏi thuật toán"
+ utter_yeucau_chung:
+  - text: "Giỏi thuật toán \n Tiếng Anh đọc hiểu \n  Tư duy lập trình"
+ utter_yeucau_toan:
+  - text: "Nắm vững kiến thức toán A1,A2"
+ utter_yeucau_tienganh:
+  - text: "Tiếng Anh đọc hiểu"
+ utter_cohoivieclam:
+  - text: "Đây là ngành mới, nhân lực còn ít nhu cầu tuyển dụng cao"
+ utter_ngon_ngu:
+  - text: "Phần lớn sử dụng python"
+ utter_nganh_hot:
+  - text: "Đây là ngành có hot hiện nay điểm đầu vào của các trường khá cao"
+ utter_nu:
+  - text: "Tùy duyên"
+ utter_canh_tranh:
+  - text: "Ngành này hiện đang hot nên sức cạnh tranh cũng như cơ hội việc làm cao"
+ utter_diemso:
+  - text: "Ngành này điểm cũng tương đối. Tùy vào thái độ và cố gắng người học như thế nào"
+ utter_hocbong:
+  - text: "Sinh viên học ngành này có bổng cũng khá nhiều"
+ utter_kt_nentang:
+  - text: "Lập trình cơ bản \n Toán cao cấp \n Cấu trúc dữ liệu giải thuật \n Python cơ bản"
+ utter_giaovien:
+  - text: "Giảng viên ngành này khá dễ nhưng thái độ của sinh viên quyết định giảng viên dễ hay không"
+ utter_chat_luong_giao_vien:
+  - text: "Giảng viên có trình độ cao nhiều giảng viên đã từng làm trong các công ty nước ngoài và có nhiều kinh nghiệm thực tế"
+ utter_bai_tap_lon:
+  - text: "Bài tập lớn tuy ít mà khó"
+ utter_cuoc_thi:
+  - text: "Hằng năm đều có các cuộc thi do khoa tổ chức như ICPC,OLP,..."
+ utter_cau_lac_bo:
+  - text: "Có nhiều câu lạc bộ để các bạn tham gia làm các dự án thực tế để có nhiều kinh nghiệm như: OLP Lab, H2.2 Lab, H9.3 Lab"
+ utter_respond_insult:
+  - text: "Câu nó của bạn không tử tế chút nào" 
+actions:
+ - utter_greet
+ - utter_thank
+ - utter_bye
+ - utter_tuvan
+ - utter_tuvankhac
+ - utter_hoc_cai_gi
+ - utter_hocde
+ - utter_yeucau_chung
+ - utter_yeucau_toan
+ - utter_yeucau_tienganh
+ - utter_cohoivieclam
+ - utter_luong
+ - utter_ngon_ngu
+ - utter_nganh_hot
+ - utter_nu
+ - utter_canh_tranh
+ - utter_diemso
+ - utter_hocbong
+ - utter_kt_nentang
+ - utter_giaovien
+ - utter_chat_luong_giao_vien
+ - utter_bai_tap_lon
+ - utter_cuoc_thi
+ - utter_cau_lac_bo
+ - utter_respond_insult
+ - action_get_luong 
+ - action_unclear
